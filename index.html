@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>BrownCourse</title>
 </head>
 <body>
@@ -53,12 +55,14 @@
                 <h4 class="iam__item-subtitle">
                     Фулл стек веб - разработчик и Android - разработчик
                 </h4>
+                <div class="iam__item-button">
                 <button class="iam__item-btn">
                     Обо мне
                 </button>
                 <button class="iam__item-btn">
                     Мои работы
                 </button>
+            </div>
             </div>
             <div class="iam__item">
                 <img class="iam__item-img" src="img/Парень.png" alt="">
@@ -146,7 +150,8 @@ pellentesque natoque .
         <p class="cases__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed Dapibus leo nec ornare diamcoccodo nibh ante facilisis.
         </p>
-        <img class="cases__img" src="img/фотка.png" alt="">
+        <div class="slide">
+        <img class="cases__img" src="img/фотка (2).svg" alt="">
         <div class="cases__items">
             <div class="cases__item">
                 <h5 class="cases__item-title">
@@ -176,8 +181,10 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                 </p>
             </div>
         </div>
+    </div>
     </section>
     <section class="price">
+        <div class="price__item">
         <h2 class="price__title">
             Расчет стоимости
         </h2>
@@ -205,7 +212,10 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                 "Выберите пункт..."
             </option>
         </select>
-        <div class="price__result">
+    </div>
+
+    <div class="price__result">
+        <div class="price__result-inner">
             <div class="price__result-item">
                 Сроки
             </div>
@@ -213,7 +223,9 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                 0
             </div>
         </div>
-        <div class="price__result">
+        
+        
+        <div class="price__result-inner">
             <div class="price__result-item">
                 Стоимость
             </div>
@@ -221,6 +233,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                 0
             </div>
         </div>
+    </div>
     </section>
     <section class="statistic">
         <h2 class="statistic__title">
@@ -275,18 +288,24 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         <h2 class="reviews__title">
             ОТЗЫВЫ
         </h2>
+        <div class="slider">
+            <div class="slide__one">
         <img class="reviews__img" src="img/фотка (1).svg" alt="">
         <p class="reviews__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante
 facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
         </p>
-        <h4 class="reviews__title">
+        <h4 class="reviews__name">
             Михаил, Ген директор ПАО “Газпром”.
         </h4>
-
+    </div>
         <div class="pagination"></div> 
+    </div>
         <!-- я хочу использовать свайпер и стили для пагинации задать в css -->
     </section>
+
+
+
     <section class="contact">
         <h2 class="contact__title">
             МОИ КОНТАКТЫ
@@ -317,13 +336,13 @@ facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
                 </a>
             </div>
         </div>
-        <h2 class="contact__title">
+        <h2 class="contact__title-two">
             ОСТАВЬТЕ МНЕ СООБЩЕНИЕ
         </h2>
         <form action="" class="form">
             <input class="contact__name" type="text" placeholder="Имя">
             <input class="contact__email" type="email" placeholder="Email">
-            <input class="contact__text" type="text" placeholder="Сообщение">
+            <input class="contact__text-two" type="text" placeholder="Сообщение">
         </form>
         <button class="contact__btn" type="submit">
             Отправить
@@ -338,7 +357,7 @@ facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
         </div>
     </section>
     <section class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2701759.996412056!2d35.90334365761339!3d48.601468351561884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LPRg9Cz0Lsg0LrQsNGA0YLRiw!5e0!3m2!1sru!2sua!4v1631963677434!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="map__item" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2701759.996412056!2d35.90334365761339!3d48.601468351561884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LPRg9Cz0Lsg0LrQsNGA0YLRiw!5e0!3m2!1sru!2sua!4v1631963677434!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <button class="map__btn">
             I`M HERE
         </button>
