@@ -1,4 +1,11 @@
-.loader {
+@font-face {
+	font-family: 'FRANK';
+	src: url('../fonts/FRABK.eot');
+	src: local('☺'), url('../fonts/FRABK.woff') format('woff'), url('../fonts/FRABK.ttf') format('truetype'), url('../fonts/FRABK.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* .loader { 
     background: none repeat scroll 0 0 #ffffff;
     position: fixed;
     bottom: 0;
@@ -23,6 +30,13 @@
     top: 50%;
     position: absolute;
   }
+*/
+
+
+
+
+
+
 
 
 
@@ -35,21 +49,24 @@
     width: 100%;
     display: flex;
     position: fixed;
+    font-family: 'FRANK';
+    z-index: 10;
 }
 .header__name{
     color: #fff;
     font-size: 28px;
     line-height: 60px;
-    padding-left: 158px;
+    
     -webkit-animation: coming 2s ease;
     -o-animation: coming 2s ease;
     animation: coming 2s ease;
+    font-family: 'FRANK';
 }
 
 .header__menu{
     display: flex;
     justify-content: space-between;
-    padding-left: 228px;
+    
     
 }
 .header__menu-item{
@@ -76,12 +93,13 @@
 
 .header__menu-link{
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 60px;
-    padding-right: 40px;
+    
     transform: scale(1);
     transition: all .1s;
     display: inline-block;
+    font-family: 'FRANK';
 }
 .header__menu-link:visited{
     color: #fff;
@@ -101,25 +119,30 @@
     
     
 }
+.title__container{
+    width: 100%;
+}
 .iam__item-title{
-    padding-left: 158px;
     padding-top: 425px;
     text-align: center;
     font-size: 60px;
     color: #2c384a;
     font-weight: bold;
+    font-family: 'FRANK';
 }
 .iam__item-subtitle{
     font-size: 16px;
-    padding-left: 158px;
+    
     margin-top: 40px;
     margin-bottom: 55px;
     color: #79818d;
     text-align: center;
+    font-family: 'FRANK';
 }
 .iam__item-button{
     text-align: center;
-    margin-left: 158px;
+    
+    
 }
 .iam__item-btn{
     margin-left: 40px;
@@ -134,6 +157,7 @@
     transition: all .2s;
     display: inline-block;
     transform: scale(1);
+    font-family: 'FRANK';
 }
 .iam__item-btn:hover{
     background: #344051;
@@ -143,10 +167,10 @@
     transform: scale(1.1);
 }
 
-.iam__item-img{
+/* .iam__item-img{
     margin-left: 150px;
 }
-
+*/
 .aboutme{
     padding-top: 100px;
     background: #fff;
@@ -157,7 +181,7 @@
     font-weight: bold;
     position: relative;
     font-size: 34px;
-
+    font-family: 'FRANK';
     color: #2c384a;
 
     margin-bottom: 95px;
@@ -182,7 +206,7 @@
     font-size: 18px;
     margin-bottom: 45px;
     margin-left: 395px;
-
+    font-family: 'FRANK';
     max-width: 755px;
     width: 100%;
 }
@@ -214,6 +238,7 @@
     text-align: center;
     margin-right: 15px;
     margin: 10px 0;
+    font-family: 'FRANK';
 }
 
 
@@ -227,7 +252,7 @@
     text-align: center;
     position: relative;
     font-size: 34px;
-
+    font-family: 'FRANK';
     color: #2c384a;
 
     font-weight: bold;
@@ -268,7 +293,8 @@
 .ido__item-text{
     text-align: center;
     font-size: 17px;
-    color: #2c384a
+    color: #2c384a;
+    font-family: 'FRANK';
 }
 
 .cases{
@@ -280,7 +306,7 @@
     text-align: center;
     position: relative;
     font-size: 34px;
-
+    font-family: 'FRANK';
     color: #2c384a;
 
     font-weight: bold;
@@ -302,7 +328,7 @@
     text-align: center;
     position: relative;
     font-size: 17px;
-
+    font-family: 'FRANK';
     color: #2c384a;
 
     font-weight: bold;
@@ -343,7 +369,7 @@
     width: 100%;
 
     font-size: 21px;
-
+    font-family: 'FRANK';
     color: #2c384a
 }
 .cases__btn{
@@ -388,7 +414,7 @@
     text-align: center;
     margin-bottom: 55px;
     font-size: 34px;
-
+    font-family: 'FRANK';
     color: #2c384a;
 
     font-weight: bold;
@@ -418,6 +444,7 @@
     font-size: 21px;
     color: #2c384a;
     margin-bottom: 20px;
+    font-family: 'FRANK';
 }
 
 
@@ -439,7 +466,7 @@
 .statistic__title{
     text-align: center;
     font-size: 34px;
-
+    font-family: 'FRANK';
     color: #2c384a;
 
     font-weight: bold;
@@ -478,6 +505,7 @@
     text-align: center;
     font-weight: bold;
     margin: 25px 0;
+    font-family: 'FRANK';
 }
 .statistic__card-text{
     font-size: 20px;
@@ -494,7 +522,7 @@
 .reviews__title{
     text-align: center;
     font-size: 34px;
-
+    font-family: 'FRANK';
     color: #2c384a;
 
     font-weight: bold;
@@ -531,7 +559,7 @@
     text-align: center;
     font-size: 17px;
     margin-left: 80px;
-
+    font-family: 'FRANK';
     margin-bottom: 50px;
 }
 /* Здесь пагинация */
@@ -569,7 +597,7 @@
     text-align: center;
     color: #fff;
     font-size: 17px;
-
+    font-family: 'FRANK';
     margin-bottom: 40px;
 }
 .contact__cards{
@@ -596,6 +624,7 @@
     display: block;
     color: #fff;
     font-size: 17px;
+    font-family: 'FRANK';
 }
 .contact__card-text{
     color: #fff;
@@ -606,7 +635,7 @@
     font-size: 21px;
     color: #fff;
     text-align: center;
-
+    font-family: 'FRANK';
     margin-bottom: 45px;
 }
 
@@ -650,7 +679,7 @@
 
     color: #fff;
     padding: 19px 13px;
-
+    font-family: 'FRANK';
     font-size: 21px;
 }
 .contact__btn:hover{
@@ -689,7 +718,7 @@
     position: absolute;
     left: 50%;
     bottom: 50%;
-
+    font-family: 'FRANK';
     font-size: 17px;
     background: #fff;
     padding: 18px 30px;
@@ -713,6 +742,7 @@
     padding-top: 50px;
     font-size: 13px;
     color: #fff;
+    font-family: 'FRANK';
 }
 
 
@@ -732,5 +762,35 @@
     to{
         opacity: 1;
         margin-top: 0;
+    }
+}
+@media (max-width: 991px){
+    .iam__item-title{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    .iam__item-subtitle{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+    }
+    .iam__item-btn{
+        color: #fff;
+        position: relative;
+        z-index: 3;
+        border: 2px solid #fff;
+    }
+    .main{
+        position: relative;
+    }
+    .main::after{
+        content: '';
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.4);
     }
 }
