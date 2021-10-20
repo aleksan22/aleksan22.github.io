@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>BrownCourse</title>
 </head>
 <body>
+    <!-- <div class="loader"> -->
+        <!-- <div class="loader_inner"></div> -->
+      <!-- </div> -->
+     
     <header class="header">
-        <div class="header__name">
+        <div class="container">
+            <div class="row">
+        <div class="header__name col-7 col-xxl-2 col-xl-3 col-lg-3 ">
             Андрей Браун
         </div>
-        <ul class="header__menu">
+       
+        <ul class="header__menu px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-flex">
             <li class="header__menu-item">
                 <a href="#" class="header__menu-link">
                     ОБО МНЕ
@@ -45,30 +53,85 @@
                 </a>
             </li>
         </ul>
+        <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Навигация
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-item">
+                        ОБО МНЕ
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-item">
+                        УСЛУГИ
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-item">
+                        КЕЙСЫ
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-item">
+                        ПРАЙС
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-item">
+                        ОТЗЫВЫ
+                    </a>
+                </li>
+                <li class="dropdown-item">
+                    <a href="#" class="dropdown-item">
+                        КОНТАКТЫ
+                    </a>
+                </li>
+                </ul>
+              </div>
+        </div>
+    </div>
+    </div>
     </header>
+    <main class="main">
     <section class="iam">
+        <div class="container h-100">
+            <div class="row align-items-center h-100">
         <div class="iam__items">
-            <div class="iam__item">
-                <h1 class="iam__item-title">
-                    Привет<br>Я Андрей Браун
-                </h1>
-                <h4 class="iam__item-subtitle">
-                    Фулл стек веб - разработчик и Android - разработчик
-                </h4>
-                <div class="iam__item-button">
-                <button class="iam__item-btn">
-                    Обо мне
-                </button>
-                <button class="iam__item-btn">
-                    Мои работы
-                </button>
+            <div class="col-lg-6 mt-2 pt-2">
+                <div class="title__container mt-2">
+                    <div class="iam__item">
+                        <h1 class="iam__item-title">
+                            Привет<br>Я Андрей Браун
+                        </h1>
+                        <h4 class="iam__item-subtitle">
+                            Фулл стек веб - разработчик и Android - разработчик
+                        </h4>
+                        <div class="iam__item-button">
+                        <button class="iam__item-btn">
+                            Обо мне
+                        </button>
+                        <button class="iam__item-btn">
+                            Мои работы
+                        </button>
+                    </div>
+                </div>
+                    </div>
             </div>
-            </div>
-            <div class="iam__item">
+            
+            <div class="iam__item col-lg-6">
                 <img class="iam__item-img" src="img/Парень.png" alt="">
             </div>
+        
         </div>
+    </div>
+    </div>
     </section>
+
 
     <!-- для под заголовками можно использовать псевдоэлементы :after -->
 
@@ -239,6 +302,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         <h2 class="statistic__title">
             НЕМНОГО СТАТИСТИКИ
         </h2>
+        
         <div class="statistic__cards">
             <div class="statistic__card">
                 <img class="statistic__card-img" src="img/смайл.png" alt="">
@@ -283,6 +347,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
                 </p>
             </div>
         </div>
+        <div class="parallax__img"></div>
     </section>
     <section class="reviews">
         <h2 class="reviews__title">
@@ -362,10 +427,14 @@ facilisis bibendum dolor feugiat at duis sed dapidus leo nec ornare diam.
             I`M HERE
         </button>
     </section>
+</main>
     <footer class="footer">
         <div class="footer__item">
             Copyright © 2021 Андрей Браун. Design by Web
         </div>
     </footer>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
