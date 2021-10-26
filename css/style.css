@@ -195,7 +195,7 @@
     margin-bottom: 35px;
 }
 .aboutme__text{
-    text-align: center;
+    
     font-size: 18px;
     margin-bottom: 45px;
     
@@ -312,12 +312,10 @@
     position: absolute;
     content: '';
     height: 4px;
-    width: 35%;
+    width: 70px;
     background: rgb(220, 115, 46);
     bottom: -30px;
-    
-    
-    margin: 0 -45%;
+    left: 10%;
 }
 .cases__text{
     text-align: center;
@@ -372,6 +370,7 @@
     padding: 10px 35px;
 
     margin-top: 25px;
+    display: block;
 }
 .cases__btn:hover{
     background: #fff;
@@ -469,12 +468,12 @@
     position: absolute;
     content: '';
     height: 4px;
-    width: 70px;
+    width: 30%;
     background: rgb(220, 115, 46);
     bottom: -30px;
     
     
-    margin: 0 -250px;
+    margin: 0 -50%;
 }
 .statistic__cards{
     
@@ -533,9 +532,7 @@
     width: 70px;
     background: rgb(220, 115, 46);
     bottom: -30px;
-    
-    
-    margin: 0 -120px;
+    left: 25%;
 }
 .reviews__img{
   
@@ -567,7 +564,6 @@
     padding-bottom: 21px;
 }
 .contact__title{
-    text-align: center;
     font-size: 34px;
 
     color: #fff;
@@ -584,9 +580,7 @@
     width: 70px;
     background: rgb(220, 115, 46);
     bottom: -30px;
-    
-    
-    margin: 0 -190px;
+    left: 20%;
 }
 .contact__text{
     text-align: center;
@@ -632,6 +626,7 @@
     margin-bottom: 20px;
     height: 35px;
     
+    
     background: rgb(216, 209, 209);
 
     
@@ -652,8 +647,8 @@
     margin-bottom: 25px;
 }
 .contact__btn{
-    margin: 0 auto;
-    display: block;
+    
+   
 
     margin-bottom: 25px;
     border: 2px solid #fff;
@@ -707,7 +702,7 @@
 }
 .map__btn{
     position: absolute;
-    left: 50%;
+    width: 10%;
     bottom: 50%;
     font-family: 'FRANK';
     font-size: 17px;
