@@ -31,7 +31,9 @@
     position: absolute;
   }
 */
-
+.wrapper{
+    overflow-x: hidden;
+}
 .header{
     height: 60px;
     background: #344051;
