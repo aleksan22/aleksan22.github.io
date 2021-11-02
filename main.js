@@ -18,3 +18,10 @@ if(x == 0 && y == 0){
     else{
         alert('Обновите страницу и выберите необходимые варианты ответов!')
     }
+
+  $('a[href^="#"]').click(function(){
+    let elClick = $(this).attr("href");
+    $('body').animate({scrollTop: $(elClick).position().top + $('body').scrollTop()}, 1500)
+    
+    return false;
+  });  
