@@ -40,3 +40,23 @@ if(x == 0 && y == 0){
         nextArrow:'<img src="img/right.png" class="slick-next" width="25px" height="25px">'
     })
   });
+
+  
+  /*$(window).scroll(function(){
+    let height = $(this).scrollTop()
+    console.log('height')
+    let stat = $('.statistic').offset().top;
+    if (height == stat){
+      $('.statistic__card').addClass('animate')
+    }
+});*/
+
+let statistic = $('.statistic').offset().top;
+$(document).ready(function(){
+  $(window).scroll(function(){
+    let scrollValue = statistic;
+    if($(window).scrollTop() >= scrollValue){
+      $('.statistic__card').addClass('animate');
+    }
+  })
+})
