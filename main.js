@@ -75,7 +75,6 @@ adapt.click(function(){
 
 button.click(function(){
   result = numberX + numberY + numberZ;
-  alert(result)
 })
 
 // MODAL ONE
@@ -92,4 +91,27 @@ setTimeout(function (){
 modalClose.click(function(){
   modal.removeClass('modal__window--active')
 })
+})
+
+
+// MODAL TWO
+
+let openBtn = $('.result__btn');
+let okay = $('.window__bottom-btn');
+let closeBtn = $('.window__btn');
+$('window--active');
+let windows = $('.window')
+
+openBtn.click(function(){
+  windows.addClass(' window--active')
+  if (result = NaN){
+    $('.window__text-one').style.display = 'none';
+    $('.window__text-two').text('Обновите страницу и выберите требования к заказу ')
+  } else{
+    $('.window__text-one').text('Стоимость Вашего заказа: '+ result)
+  }
+  
+})
+closeBtn.click(function(){
+  windows.removeClass('window--active')
 })
