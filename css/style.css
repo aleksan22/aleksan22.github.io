@@ -34,12 +34,15 @@
 .wrapper{
     overflow-x: hidden;
 }
+.hidden{
+    overflow: hidden;
+}
 .header{
     height: 60px;
     background: #344051;
     width: 100%;
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     font-family: 'FRANK';
     z-index: 10;
 }
@@ -101,6 +104,42 @@
 }
 .header__menu-link:active{
     transform: scale(1.1);
+}
+.modal__window{
+    background: #344051;
+    opacity: .8;
+    z-index: 12;
+    transform: translateX(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.hidden{
+    overflow: hidden;
+}
+.modal__window--active{
+    transform: translateX(0%);
+    transition: 1s;
+    overflow: hidden;
+}
+.modal__window-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10%;
+    margin-left: 90%;
+}
+.modal__window-title{
+    color: #fff;
+    padding: 20px;
+}
+.modal__window-text{
+    color: #fff;
+    padding: 20px;
+}
+.modal__window-body{
+    background: #000;
 }
 .iam{
     background: url(../img/фон1.png);
@@ -423,6 +462,34 @@
 
     margin-bottom: 45px;
 }
+/* .modal{
+    background: #344051;
+    opacity: .8;
+    z-index: 20;
+    transform: translateX(100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.modal--active{
+    transform: translateX(0%);
+    transition: 1s;
+}
+.modal__btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-top: 10%;
+    margin-left: 90%;
+}
+.modal__bottom-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-top: 90%;
+    margin-left: 90%;
+} */
 .price__result{
     margin-top: 25px;
 }
@@ -483,10 +550,14 @@
     display: flex;  
 }
 .statistic__card{
-    
-
     max-width: 215px;
     width: 100%;
+}
+.animate{
+    animation-duration: 8s;
+    -o-animation-name: staticMove;
+    -webkit-animation-name: staticMove;
+    animation-name: staticMove;
 }
 @media (min-width: 1920px){
     .statistic__cards{
@@ -721,6 +792,10 @@
     transform: scale(1.1);
     transition: .5s;
 }
+.result__btn{
+    padding: 20px 0;
+    border: none;
+}
 .footer{
     height: 100px;
     background: #344051;
@@ -733,7 +808,16 @@
     font-family: 'FRANK';
 }
 
-
+@keyframes staticMove{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
 @keyframes coming{
     from{
         opacity: 0;
