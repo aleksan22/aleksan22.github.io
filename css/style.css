@@ -110,7 +110,7 @@
     background: #344051;
     opacity: .8;
     transform: translateX(100%);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
@@ -463,34 +463,47 @@
 
     margin-bottom: 45px;
 }
-/* .modal{
+.window{
     background: #344051;
     opacity: .8;
     z-index: 20;
     transform: translateX(100%);
-    position: absolute;
+    position: fixed;
     top: 0;
     bottom: 0;
     width: 100%;
 }
-.modal--active{
+.window--active{
     transform: translateX(0%);
     transition: 1s;
 }
-.modal__btn{
+.window__btn{
     background: transparent;
     border: none;
     outline: none;
     margin-top: 10%;
     margin-left: 90%;
 }
-.modal__bottom-btn{
+
+.window__body{
+    background: #000;
+    margin-top: 10%;
+}
+.window__bottom-btn{
     background: transparent;
     border: none;
     outline: none;
     margin-top: 90%;
     margin-left: 90%;
-} */
+}
+.window__text-one{
+    color: #fff;
+    padding: 20px 50px;
+}
+.window__text-two{
+    color: #fff;
+    padding: 20px 50px;
+}
 .price__result{
     margin-top: 25px;
 }
