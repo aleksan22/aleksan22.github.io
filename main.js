@@ -19,6 +19,7 @@ if(x == 0 && y == 0){
         alert('Обновите страницу и выберите необходимые варианты ответов!')
     }
 */
+
   $('a[href^="#"]').click(function(){
     let elClick = $(this).attr("href");
     $('body').animate({scrollTop: $(elClick).position().top + $('body').scrollTop()}, 1500)
@@ -41,22 +42,54 @@ if(x == 0 && y == 0){
     })
   });
 
-  
-  /*$(window).scroll(function(){
-    let height = $(this).scrollTop()
-    console.log('height')
-    let stat = $('.statistic').offset().top;
-    if (height == stat){
-      $('.statistic__card').addClass('animate')
-    }
-});*/
+let type = $('.type');
+let design = $('.design');
+let adapt = $('.adapt');
 
-let statistic = $('.statistic').offset().top;
+let button = $('.result__btn'),
+    more = $('#more').val(),
+    flexible = $('#flexible').val(),
+    adaptive = $('#adaptive').val();
+let y;
+let x;
+let z;
+let numberX;
+let numberY;
+let numberZ;
+let result;
+
+type.click(function(){
+  x = $(this).val();
+  numberX = +x;
+});
+
+design.click(function(){
+  y = $(this).val()
+  numberY = +y
+});
+
+adapt.click(function(){
+  z = $(this).val()
+  numberZ = +z
+});
+
+button.click(function(){
+  result = numberX + numberY + numberZ;
+  alert(result)
+})
+
+// MODAL ONE
 $(document).ready(function(){
-  $(window).scroll(function(){
-    let scrollValue = statistic;
-    if($(window).scrollTop() >= scrollValue){
-      $('.statistic__card').addClass('animate');
-    }
-  })
+let modal = $('.modal__window');
+$('modal__window--active');
+let modalClose = $('.modal__window-btn');
+
+
+
+setTimeout(function (){
+  modal.addClass('modal__window--active');
+}, 4000);
+modalClose.click(function(){
+  modal.removeClass('modal__window--active')
+})
 })
