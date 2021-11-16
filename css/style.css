@@ -109,7 +109,6 @@
 .modal__window{
     background: #344051;
     opacity: .8;
-    z-index: 12;
     transform: translateX(100%);
     position: absolute;
     top: 0;
@@ -123,6 +122,7 @@
     transform: translateX(0%);
     transition: 1s;
     overflow: hidden;
+    z-index: 12;
 }
 .modal__window-btn{
     background: transparent;
