@@ -102,7 +102,26 @@
     </header>
     
     <main class="main">
-        
+        <div class="modal__window">
+            <div class="container">
+            <div class="modal__window-head col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <button class="modal__window-btn col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1">
+                <img src="img/close.png" alt="" class="modal__window-icon" width="25px" height="25px">
+            </button>
+            </div>
+            <div class="row justify-content-center">
+            <div class="modal__window-body col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <h3 class="modal__window-title">
+                    Lorem ipsum dolor sit amet
+                </h3>
+                <p class="modal__window-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                </p>
+            </div>
+        </div>
+            <div class="modal__window-bottom"></div>
+        </div>
+        </div>
     <section class="iam">
         <div class="container h-100">
             <div class="row align-items-center h-100">
@@ -368,9 +387,12 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         </h4>
     </div>
     <div class="row justify-content-center">
-        <select class="price__list col-xl-10 col-xxl-9 col-lg-10 col-md-10 col-sm-10 ">
-            <option disabled>
-                "Выберите пункт..."
+        <select name="" class="price__list type col-xl-10 col-xxl-9 col-lg-10 col-md-10 col-sm-10 ">
+            <option value='1000' id="more">
+                Многостраничник
+             </option>   
+            <option value='500' id="info">
+                Инфосайт
             </option>
         </select>
     </div>
@@ -380,9 +402,15 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         </h4>
     </div>
     <div class="row justify-content-center">
-        <select class="price__list col-xl-10 col-xxl-9 col-lg-10 col-md-10 col-sm-10">
-            <option disabled>
-                "Выберите пункт..."
+        <select name="Гибкий" class="price__list design col-xl-10 col-xxl-9 col-lg-10 col-md-10 col-sm-10">
+            <option value='500' id="flexible">
+                Гибкий
+            </option>
+            <option value='700' id="kombination">
+                Комбинированный
+            </option>
+            <option value='900' id="interfais">
+                Интерфейсный
             </option>
         </select>
     </div>
@@ -392,9 +420,12 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         </h4>
     </div>
     <div class="row justify-content-center">
-        <select class="price__list col-xl-10 col-xxl-9 col-lg-10 col-md-10 col-sm-10">
-            <option disabled>
-                "Выберите пункт..."
+        <select name="Адаптивный" class="price__list adapt col-xl-10 col-xxl-9 col-lg-10 col-md-10 col-sm-10">
+            <option value='500' id="adaptive">
+                Адаптивный
+            </option>
+            <option value='300' id="responsive">
+                Резиновый
             </option>
         </select>
     </div>
@@ -423,8 +454,32 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
         </div>
     </div>
     </div>
+    <button class="result__btn col-xxl-4 col-xl-4 col-lg-4 col-md-3 col-sm-3" type="submit">
+        Расчитать
+    </button>
 </div>
     </section>
+    <!-- <div class="modal modal--active">
+        <div class="container">
+        <div class="modal__head col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <button class="modal__btn col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1">
+            <img src="img/close.png" alt="" class="modal__window-icon" width="25px" height="25px">
+        </button>
+        </div>
+        <div class="row justify-content-center">
+        <div class="modal__body col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <p class="modal__window-text">
+                Стоимость Вашего заказа:
+            </p>
+        </div>
+    </div>
+        <div class="modal__bottom col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+            <button class="modal__bottom-btn col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1">
+                <img src="img/check.png" alt="" class="modal__btn-icon" width="25px" height="25px">
+            </button>
+        </div>
+    </div>
+    </div> -->
     <section class="statistic" id="stat">
         <div class="container">
         <div class="row justify-content-center">
