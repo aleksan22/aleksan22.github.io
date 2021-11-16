@@ -104,7 +104,7 @@ let windows = $('.window')
 
 openBtn.click(function(){
   windows.addClass(' window--active')
-  if (result = NaN){
+  if (result == NaN){
     $('.window__text-one').style.display = 'none';
     $('.window__text-two').text('Обновите страницу и выберите требования к заказу ')
   } else{
