@@ -33,6 +33,7 @@
 */
 .wrapper{
     overflow-x: hidden;
+    position: relative;
 }
 .hidden{
     overflow: hidden;
