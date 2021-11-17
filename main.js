@@ -115,3 +115,44 @@ openBtn.click(function(){
 closeBtn.click(function(){
   windows.removeClass('window--active')
 })
+
+// ANIMATE
+// const statistic = (root) => {
+//   document.querySelector('animate');
+//   let activeAnimate = ('.statistic__item')
+//   statistic(document.querySelector('.statistic'))
+//   const options = { threshold: 0.3 }
+//   const observer = new IntersectionObserver(callback, options)
+//   observer.observe(s)
+//   const callback = (entries) => {
+//       activeAnimate.classList.add('animate')
+//   }
+//   new IntersectionObserver((entries) => {
+//     options
+//   })
+// }
+
+let options = { 
+ root: document.querySelector('.statistic'), 
+ rootMargin: '5px', 
+ threshold: 0.5
+ };
+
+
+let animate = document.querySelector('.statistic__item');
+let target = document.querySelector('.statistic__inner');
+document.querySelector('animate');
+let myFirstObserver = new IntersectionObserver(callback => {
+  let = observer.observe(target);
+  animate.classList.add('animate');
+}, options);
+
+// let callback = function(entries, observer) {
+//   entries.forEach(entry => {
+//       entry.animate; // a DOMRectReadOnly for the intersection observer's target.
+//       entry.intersectionRect;   // a DOMRectReadOnly for the visible portion of the intersection observer's target.
+//       entry.intersectionRatio;  // the number for the ratio of the intersectionRect to the boundingClientRect.
+//       entry.target;             // the Element whose intersection with the intersection root changed.
+//       entry.isIntersecting;     // intersecting: true or false
+//   });
+// };
