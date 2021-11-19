@@ -132,27 +132,55 @@ closeBtn.click(function(){
 //   })
 // }
 
-let options = { 
- root: document.querySelector('.statistic'), 
- rootMargin: '5px', 
- threshold: 0.5
- };
+// let animate = document.querySelector('.statistic__item');
+// let target = document.querySelector('.statistic__inner');
 
-
-let animate = document.querySelector('.statistic__item');
-let target = document.querySelector('.statistic__inner');
+window.onload = () => {
+  observer();
+  
+}
 document.querySelector('animate');
-let myFirstObserver = new IntersectionObserver(callback => {
-  let = observer.observe(target);
-  animate.classList.add('animate');
-}, options);
+  let animate = document.querySelector('.statistic__item')
+function observer() {
+  // устанавливаем настройки
+  const options = {
+    // родитель целевого элемента - область просмотра, не конкретный DOM элемент
+    root: null,
+    // без отступов
+    rootMargin: '5px',
+    // процент пересечения
+    threshold: 0.5
+  }
 
-// let callback = function(entries, observer) {
-//   entries.forEach(entry => {
-//       entry.animate; // a DOMRectReadOnly for the intersection observer's target.
-//       entry.intersectionRect;   // a DOMRectReadOnly for the visible portion of the intersection observer's target.
-//       entry.intersectionRatio;  // the number for the ratio of the intersectionRect to the boundingClientRect.
-//       entry.target;             // the Element whose intersection with the intersection root changed.
-//       entry.isIntersecting;     // intersecting: true or false
-//   });
-// };
+  // создаем наблюдатель
+  const observer = new IntersectionObserver((entries, observer) => {
+    // для каждой записи-целевого элемента
+    entries.forEach(entry => {
+      // если элемент является наблюдаемым
+      if (entry.isIntersecting) {
+        const tagTarget = entry.target;
+
+        console.log('Наблюдатель работает');
+        
+        /*
+         *
+         *Ваш код
+         * 
+         * 
+         */
+      
+          animate.classList.add('animate')
+        
+        
+        // прекращаем наблюдение
+        observer.unobserve(tagTarget)
+      }
+    })
+  }, options)
+  
+  // следим за всеми элементами с классом 'statistic__item' на странице
+  const arr = document.querySelectorAll('.statistic__item')
+  arr.forEach(i => {
+    observer.observe(i)
+  })
+}
