@@ -162,18 +162,16 @@ function observer() {
 
         console.log('Наблюдатель работает');
         
-        /*
-         *
-         *Ваш код
-         * 
-         * 
-         */
+        let array = document.querySelectorAll('.statistic__card').forEach(function(elem){
+          elem.classList.add('animate')
+          
+        })
       
-          animate.classList.add('animate')
+          // animate.classList.add('animate')
         
         
         // прекращаем наблюдение
-        observer.unobserve(tagTarget)
+        // observer.unobserve(tagTarget)
       }
     })
   }, options)
