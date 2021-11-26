@@ -563,16 +563,33 @@
     
     display: flex;  
 }
+.statistic__item{
+    height: 390px;
+    overflow-y: hidden;
+}
 .statistic__card{
     max-width: 215px;
     width: 100%;
+    transform: translateY(-100%);
 }
 .animate{
-    animation-duration: 8s;
+    /* animation-duration: 2s;
     -o-animation-name: staticMove;
     -webkit-animation-name: staticMove;
-    animation-name: staticMove;
+    animation-name: staticMove; */
+    transform: translateY(0%);
+    transition: 2s;
 }
+/* @keyframes staticMove{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+} */
 @media (min-width: 1920px){
     .statistic__cards{
         margin-left: 100px;
@@ -822,16 +839,6 @@
     font-family: 'FRANK';
 }
 
-@keyframes staticMove{
-    from{
-        margin-left: 100%;
-        width: 300%;
-    }
-    to{
-        margin-left: 0%;
-        width: 100%;
-    }
-}
 @keyframes coming{
     from{
         opacity: 0;
